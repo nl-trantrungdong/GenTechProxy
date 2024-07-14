@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<head>
+    <meta charset="UTF-8">
+    <title>Proxy List</title>
+</head>
+<body>
+<h1>Proxy List</h1>
+<ul>
+    <p th:each="proxy : ${proxies}" th:text="${proxy.ip + ':' + proxy.port}"></p>
+</ul>
+</body>
+</html>
